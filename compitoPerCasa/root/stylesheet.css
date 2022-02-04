@@ -6,14 +6,9 @@
 
 body{
   padding: 2.5em;
+  padding-bottom: 100px;
 }
 
-.homeContent{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:flex-start;
-}
 
 .githubLink {
   display: inline-flex;
@@ -23,13 +18,6 @@ body{
   justify-content: center;
 }
 
-.profilePic{
-  border-radius: 50%;
-}
-
-h1.name:link{
-  text-decoration: none;
-}
 
 .gitSlash{
   font-size: 50px;
@@ -38,17 +26,10 @@ h1.name:link{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; 
-  justify-content: space-evenly;
+  justify-content:first baseline; 
 }
 .menuText{
   margin-right: 1em;
-}
-footer {
-  position:absolute;
-    bottom:0px;
-    width: 100%;
-    margin: 0;
 }
 
 .entries{
@@ -59,29 +40,30 @@ footer {
   gap: 10px;
 }
 
+
 a {
   text-decoration: none;
 }
 
-.projectContainer{
-  padding-inline: 1.5em;
+.projectContainer, .lastSeenContainer{
+  padding-inline: 20px;
   border-style: solid;
   border-radius: 15px;
   border-color: darkgray;
 }
 
-
-p.unpwnInfos {
-  text-align: justify;
-  text-justify: inter-word;
+.lastSeenContainer{
+  width:560px
 }
+.video{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
 
 .nameLink{
   font-size: 3em;
-}
-.projectName:hover, 
-  .menuText:hover{
-  color: rgb(187, 187, 187);
 }
 
 .homeGithubPic{
@@ -90,21 +72,11 @@ p.unpwnInfos {
   height: 75px;
 }
 
-.gitSlash:hover .homeGithubPic{
-  content:url("../assets/github-black.png");
-}
-.gitSlash:after .homeGithubPic{
-  content:url("../assets/github-white.png");
-}
 
-.gitSlash:hover{
+.homeGithubPic:hover ~ .gitSlash,
+  .projectName:hover, 
+  .menuText:hover,
+  .nameLink:hover,
+  .gitSlash:hover{
   color: rgb(187, 187, 187);
-}
-
-
-.homeGithubPic:hover .gitSlash{
-  color: rgb(187, 187, 187);
-}
-.homeGithubPic:after .gitSlash{
-  color: black;
 }
