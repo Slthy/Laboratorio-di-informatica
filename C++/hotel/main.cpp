@@ -27,10 +27,7 @@ class Hotel {
 
 int main(){
   unsigned short int sPrice, dPrice, smalls, doubles;
-  sPrice=10;
-  dPrice=20;
-  smalls=1;
-  doubles=1;
+  cin>>sPrice>>dPrice>>smalls>>doubles;
   Hotel hotel(sPrice, dPrice, smalls, doubles);
   vector<float> totals = hotel.getTotals();
   cout<<totals[0]<<'\t'<<totals[1]<<'\t'<<totals[2]<<'\t'<<endl;
