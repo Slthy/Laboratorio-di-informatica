@@ -20,7 +20,7 @@ void outputHotel(array<float, 3> totals){
       <<"\nCosto totale: "<<totals[2]<<endl;
   return;
 }
-int main(){//g++ -std=c++11 mainC++11.cpp
+int main(){//g++ -std=c++11 hotelC++11.cpp
   unsigned short int smallRoomPrice, doubleRoomPrice, smallRooms, doubleRooms;
   cout<<"Inserire il prezzo per la pulizia di una stanza singola, di doppia e il numero delle camere singole e doppie da calcolare: ";
   cin>>smallRoomPrice>>doubleRoomPrice>>smallRooms>>doubleRooms;
