@@ -25,12 +25,19 @@ class Hotel {
     }
 };
 
+void outputHotel(vector<float> totals){
+  cout<<"\nImponibile: "<<totals[0]
+      <<"\nIVA: "<<totals[1]
+      <<"\nCosto totale: "<<totals[2]<<endl;
+  return;
+}
+
 int main(){
   unsigned short int sPrice, dPrice, smalls, doubles;
+  cout<<"Inserire il prezzo per la pulizia di una stanza singola, di doppia e il numero delle camere singole e doppie da calcolare: ";
   cin>>sPrice>>dPrice>>smalls>>doubles;
   Hotel hotel(sPrice, dPrice, smalls, doubles);
-  vector<float> totals = hotel.getTotals();
-  cout<<totals[0]<<'\t'<<totals[1]<<'\t'<<totals[2]<<'\t'<<endl;
+  outputHotel(hotel.getTotals());
 
   return 0;
 }
