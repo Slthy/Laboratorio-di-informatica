@@ -11,4 +11,5 @@ int main (){
 	cout << "Inserisci un numero reale: ";
 	cin >> numeroConLaVirgola;
 	cout<< "Hai inserito il numero intero: " << numeroIntero << "\ne il numero reale: " << numeroConLaVirgola << '\n';
+	return 0;
 }

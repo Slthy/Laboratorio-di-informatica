@@ -10,12 +10,13 @@ int main(){
         do{
             cout<<"Inserire il "<<i+1<<"o elemento dell'array (inserire un numero a tre cifre): ";
             cin>>var;
-            if(var<100) cout<<"Variabile inferiore a zero"<<endl;
+            if(var<100) cout<<"Variabile inferiore a cento"<<endl;
         } while(var<100);
         array[i] = var;
     }
     cout<<"Elementi array: ";
     for (int i = 0; i < 10; i++) cout<<"\n\t-) "<<array[i]<<"\n";
     
+    return 0;
 
 }
