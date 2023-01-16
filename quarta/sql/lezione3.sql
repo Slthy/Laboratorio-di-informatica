@@ -1,6 +1,6 @@
 DROP TABLE Customers;
 DROP TABLE Orders;
-DROP TABLE Shippings:
+DROP TABLE Shippings;
 
 CREATE TABLE Impiegati (
     ID smallint PRIMARY KEY,
