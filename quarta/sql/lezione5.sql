@@ -38,34 +38,21 @@ SELECT SUM (Stipendio) FROM Impiegati WHERE Residenza = "Napoli";
 
 SELECT nome, cognome FROM Impiegati ORDER BY (cognome);
 SELECT nome, cognome FROM Impiegati ORDER BY (cognome) DESC;
-
 /*
     Nome	Cognome
-        Luca	Bianchi
-        Luca	Rossi
-        Mario	Rossini
+    Luca	Bianchi
+    Luca	Rossi
+    Mario	Rossini
 
     Nome	Cognome
-        Mario	Rossini
-        Luca	Rossi
-        Luca	Bianchi
+    Mario	Rossini
+    Luca	Rossi
+    Luca	Bianchi
 */
+
 SELECT * FROM Impiegati GROUP BY Residenza = 'Napoli';
 /*
     ID	Nome	Cognome	Residenza	Stipendio
     22	Luca	Rossi	Torino	    22575
     20	Mario	Rossini	Napoli	    31500
-*/
-
-having
-/*  Possibili domande verifica
-
-    create table
-    alter table, drop, alter
-    update
-    insert into
-    struttura select: SELECT colonne FROM tabelle WHERE condizione, * = ALL, Distinct
-    rinominare colonna: as
-
-
 */
