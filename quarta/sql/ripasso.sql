@@ -8,7 +8,7 @@ CREATE TABLE films (
     incasso decimal(9, 2),
     regista char(30),
     anno smallint
-)
+);
 
 INSERT INTO films (ID, nome_film, incasso, regista, anno) VALUES 
     (0, 'film1', 1000000, 'regista1', 1980),
