@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+h1, p, mark {
+    color: crimson;
+}
+.orari, .costi {
+    margin-left: auto;
+    margin-right: auto;
+  }
